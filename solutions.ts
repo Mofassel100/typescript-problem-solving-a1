@@ -70,6 +70,7 @@ class Student extends Person {
     return `Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`;
   }
 }
+
 const student = new Student("Alice", 20, "A");
 const studentBoResult = student.getDetails();
 
