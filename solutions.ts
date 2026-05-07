@@ -5,7 +5,6 @@ function filterEvenNumber(evenN: number[]): number[] {
   return eventNumber;
 }
 const checkEvenNumber = filterEvenNumber([1, 2, 3, 4, 5, 6]);
-// console.log(checkEvenNumber);
 
 // Problem 2
 function reverseString(reString: string): string {
@@ -13,7 +12,6 @@ function reverseString(reString: string): string {
   return reStringType;
 }
 const reveseCheck = reverseString("Mofassel");
-// console.log(reveseCheck);
 
 // Promlem 3
 type StringOrNumber = string | number;
@@ -25,7 +23,6 @@ function checkType(StringOrNu: StringOrNumber): StringOrNumber {
   }
 }
 const checkStringOrNum = checkType(22);
-// console.log(checkStringOrNum);
 
 // problem 4:
 function getProperty<T, Y extends keyof T>(typeOb: T, key: Y) {
@@ -34,7 +31,6 @@ function getProperty<T, Y extends keyof T>(typeOb: T, key: Y) {
 const user = { id: 1, name: "John Doe", age: 21 };
 getProperty(user, "name");
 const checkNameVa = getProperty(user, "name");
-// console.log(checkNameVa);
 
 //Problem 5
 interface Book {
@@ -54,7 +50,6 @@ const myBook = {
   publishedYear: 2024,
 };
 const myBookResult = toggleReadStatus(myBook);
-// console.log(myBookResult);
 
 // Problem 6
 class Person {
@@ -77,7 +72,6 @@ class Student extends Person {
 }
 const student = new Student("Alice", 20, "A");
 const studentBoResult = student.getDetails();
-// console.log(studentBoResult);
 
 // Problem 7 :
 
@@ -85,4 +79,3 @@ function getIntersection(num1: number[], num2: number[]): number[] {
   return num1.filter((arrEle) => num2.includes(arrEle));
 }
 const result = getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]);
-console.log(result);
